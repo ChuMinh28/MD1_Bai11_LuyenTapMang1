@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = []
+    let total = 0
+    for (let i = 0; i < 4; i++) {
+        let num = +prompt('Enter a Number: ')
+        arr.push(num)
+        total += arr[i]
+        console.log(total)
+    }
+    let average = total/arr.length
+    document.write('Array = [' + arr + ']' + '<br>')
+    document.write('Gia tri trung binh cua mang la:   ' + average + '' + '<br>')
+    let max = arr[0]
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i]
+        }
+    }
+    document.write('Gia tri max trong mang la: ' + max)
+</script>
+</body>
+</html>

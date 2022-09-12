@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let a = [1,9,3,2];
+    //
+    // for(let i=0;i<a.length-1;i++){
+    //
+    //     for(let j=i+1;j<a.length;j++){
+    //
+    //         if(a[i] > a[j]){
+    //
+    //             let x = a[i];
+    //
+    //             a[i] = a[j];
+    //
+    //             a[j] = x; }
+    //
+    //     }
+    //     console.log(a)
+    // }
+    let arr = []
+    for (let i = 0; i < 10; i++) {
+        let number = +prompt('Enter a number: ')
+        arr.push(number)
+    }
+    document.write('Array = ['+arr+']'+'<br>')
+    for (let i = 0; i < arr.length; i++) {
+        if(arr[i]>=10){
+            document.write('So nguyen lon hon hoac bang 10 la :' + arr[i] + '<br>')
+        }
+    }
+</script>
+</body>
+</html>

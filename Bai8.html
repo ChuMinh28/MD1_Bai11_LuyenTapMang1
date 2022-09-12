@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+  let array = []
+  for (let i = 0; i < 5; i++) {
+    let num = +prompt('Enter a number to create array:')
+    array.push(num)
+  }
+  document.write('Array = ['+array+']'+'<br>')
+
+     array.sort(function (a,b){
+         return a-b
+     })
+     document.write('<h2>Array sau khi sap xep: </h2>'+'Array = ['+array+']')
+</script>
+</body>
+</html>
